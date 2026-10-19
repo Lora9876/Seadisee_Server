@@ -182,7 +182,8 @@ class SeadiseeModule {
 			password = :password,
 			phone= :phone,
 			description= :description,
-			menu= :menu',
+			menu= :menu
+			WHERE id = :id',
 			array(
 				'name' => $_POST['name'], 
 				'address' => $_POST['address'], 
@@ -190,7 +191,8 @@ class SeadiseeModule {
 				'password' => $_POST['password'],
 				'phone'=> $_POST['phone'],
 				'description'=> $_POST['description'],
-				'menu'=>$_POST['menu']
+				'menu'=>$_POST['menu'],
+				'id' => $id
 			)
 		);
 		
